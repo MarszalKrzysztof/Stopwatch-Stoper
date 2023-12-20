@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="?attr/colorBackgroundLight">
+
+    <!--Wyświetlacz czasu-->
+    <TextView
+        android:id="@+id/time_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/colorTimer"
+        android:textSize="60sp" />
+
+    <!--Przycisk Start-->
+    <Button
+        android:id="@+id/start_button"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/time_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:text="Start" />
+
+    <!--Przycisk Stop-->
+    <Button
+        android:id="@+id/stop_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/start_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:text="Stop" />
+
+    <!--Przycisk Reset-->
+    <Button
+        android:id="@+id/reset_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stop_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:text="Reset" />
+
+    <!--Przełącznik trybu ciemnego-->
+    <Switch
+        android:id="@+id/switch_dark_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reset_button"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="120dp"
+        android:text="Dark mode" />
+
+    <!--Logo AHE-->
+    <ImageView
+        android:id="@+id/ahe_logo"
+        android:layout_width="164dp"
+        android:layout_height="118dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ahe_logo" />
+
+    <!--Tekst informacyjny o AHE-->
+    <TextView
+        android:id="@+id/textAhe"
+        android:layout_width="312dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ahe_logo"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="40dp"
+        android:textColor="@color/colorAhe"
+        android:textAlignment="center"
+        android:text="Akademia Humanistyczno Ekonomiczna w Łodzi" />
+
+    <!--Sygnatura-->
+    <TextView
+        android:id="@+id/textSignature"
+        android:layout_width="271dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textAhe"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="70dp"
+        android:textColor="@color/colorAhe"
+        android:textAlignment="center"
+        android:text="Krzysztof Marszał 161950" />
+
+</RelativeLayout>
