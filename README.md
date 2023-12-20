@@ -1,2 +1,2 @@
 # Stopwatch-Stoper
-Projekt na przedmiot - Programowanie urządzeń mobilnych
+Prosta aplikacja z funkcją stopera.
